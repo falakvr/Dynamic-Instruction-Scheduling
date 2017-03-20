@@ -53,6 +53,50 @@ int rmt[67][2];
 int COLUMNS = 11;
 int COL_TS = 22;
 
+/*
+
+Column headers
+
+seq_no = 0; 
+valid = 1;
+dst = 2;
+src1 = 3;
+src1_ready = 4;
+src2 = 5;
+src2_ready = 6;
+type_no = 7;
+latency = 8;
+ready = 9;
+init_dst = 10;
+pc = 11;
+
+COL_TS headers
+
+op_type = 0;
+dst = 1;
+src1 = 2;
+src2 = 3;
+fe_b = 4;
+fe_dur = 5;
+de_b = 6;
+de_dur = 7;
+rn_b = 8;
+rn_dur = 9;
+rr_b = 10;
+rr_dur = 11;
+di_b = 12;
+di_dur = 13;
+is_b = 14;
+is_dur = 15;
+exe_b = 16;
+exe_dur = 17;
+wb_b = 18;
+wb_dur = 19;
+ret_be = 20;
+ret_dur = 21;
+
+*/
+
 FILE *pFile;
 
 unsigned int HexToInt(char *inAddress);
